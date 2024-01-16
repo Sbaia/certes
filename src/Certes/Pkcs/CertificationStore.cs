@@ -69,8 +69,8 @@ namespace Certes.Pkcs
                 }
                 else
                 {
-                    throw new AcmeException(
-                        string.Format(Strings.ErrorIssuerNotFound, certificate.IssuerDN, certificate.SubjectDN));
+                    break;
+                    // throw new AcmeException(string.Format(Strings.ErrorIssuerNotFound, certificate.IssuerDN, certificate.SubjectDN));
                 }
             }
             
